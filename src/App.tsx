@@ -17,10 +17,13 @@ function App() {
         setGet([])
     }
 
-    useEffect(() => {    // useEffect(()=>{},get) //значит автоматически отрисуйся если изменится get
+    useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
             .then(response => response.json())
             .then(json => setGet(json))}, []) //значит автоматически отрисуйся один раз
+
+    // useEffect(()=>{},get) //значит автоматически отрисуйся если изменится get
+
 
 
     return (
