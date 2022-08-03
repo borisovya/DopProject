@@ -24,8 +24,6 @@ function App() {
 
     // useEffect(()=>{},get) //значит автоматически отрисуйся если изменится get
 
-
-
     return (
         <div className="App">
             <Button nickName={'CleanPage'} callBack={getRequestHandler}/>
